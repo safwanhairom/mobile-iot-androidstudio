@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGreyTransparent"
+    tools:context="com.example.mymonitoring.RecordFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/iconchickennew"/>
+
+        <EditText
+            android:id="@+id/TFincubatorid"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorWhite"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/element_outline"
+            android:drawableRight="@drawable/ic_format_list_numbered_black_24dp"
+            android:hint="No siri of incubator"
+            />
+
+        <EditText
+            android:id="@+id/TFTotal"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorWhite"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/element_outline"
+            android:drawableRight="@drawable/ic_lock_black_24dp"
+            android:hint="Total eggs succesfull egg "
+             />
+
+
+
+        <EditText
+            android:id="@+id/TFDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Select Date"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/ic_calender_black_24dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/BSave"
+            android:clickable="true"
+            android:text="Save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_black"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

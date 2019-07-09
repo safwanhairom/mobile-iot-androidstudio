@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mymonitoring.SignupActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGreyTransparent"
+        android:padding="20dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textStyle="bold"
+                    android:text="CREATE ACCOUNT"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="2"/>
+                
+                <ImageView
+                    android:id="@+id/closeSignupIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close_black_24dp"/>
+
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+
+
+                <EditText
+                    android:id="@+id/TFfullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/element_outline"
+                    android:drawableRight="@drawable/ic_person_black_24dp"
+                    android:hint="Full Name" />
+
+                <EditText
+                    android:id="@+id/TFemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/element_outline"
+                    android:drawableRight="@drawable/ic_email_black_24dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/TFpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/element_outline"
+                    android:drawableRight="@drawable/ic_lock_black_24dp"
+                    android:hint="Password"
+                    android:inputType="numberPassword" />
+
+                <EditText
+                    android:id="@+id/TFcpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/element_outline"
+                    android:drawableRight="@drawable/ic_lock_black_24dp"
+                    android:hint="Confirm Password"
+                    android:inputType="numberPassword" />
+
+
+                <Button
+                    android:id="@+id/Bsignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_black"
+                    android:text="JOIN"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/coloOffBlack"
+                android:text="  © 2018 Chicken Egg Monitoring System: CeMS"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

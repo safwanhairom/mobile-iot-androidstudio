@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mymonitoring.ProfileFragment"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    //blank fragment layout what to do
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGreyTransparent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/abah" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:textSize="20dp"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:text="Hairom bin Marsin"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:textSize="20dp"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:text="Tok Abah Chicken Farm was founded by Hairom Marsin in 1960s in the state of Johor. Initially, the farm started with just a few hundreds hen-chickens producing a small numbers of table eggs a day."
+                android:textColor="@color/colorBlack"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/coloOffBlack"
+                    android:text="© 2018 Chicken Egg Monitoring System: CeMS"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</FrameLayout>

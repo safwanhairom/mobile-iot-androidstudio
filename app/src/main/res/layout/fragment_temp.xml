@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mymonitoring.MonitoringTemp">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchorGravity="top|center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+            <Button
+                android:id="@+id/btnTemperature"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="Temperature" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="449dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="118dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/TemperatureLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/tempdisplay" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="300dp"
+                        android:text="Current Temperature :"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/tempNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="........"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Condition:"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/s1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="........"
+                        android:textColor="@color/colorBlack" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/HumidityLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include layout="@layout/humidisplay" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="300dp"
+                        android:text="Current Humidity :"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/humidNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="........"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Condition:"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/suggestionHumid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="........"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
